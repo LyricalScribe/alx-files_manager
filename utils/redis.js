@@ -25,7 +25,6 @@ class RedisClient {
     return this.isConnected || false;
   }
 
-  // get method
   async get(key) {
     const value = await this.getAsync(key);
     return value;
